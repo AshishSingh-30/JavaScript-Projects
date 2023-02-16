@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Baskerville', serif;
+}
+
+body{
+    background-color: rgb(118, 46, 151);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.pw-container{
+    background-color: rgb(47, 11, 61);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    min-width: 330px;
+}
+
+.pw-header{
+    padding: 1rem;
+}
+
+.pw{
+    background-color: rgb(79, 33, 102);
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    height: 55px;
+    width: 100%;
+    position: relative;
+    padding: 0.8rem;
+    overflow: auto;
+}
+
+.pw button{
+    background-color: white;
+    color: rgb(53, 3, 48);
+    padding: 0.25rem;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(0, 20%);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    opacity: 0;
+}
+.pw:hover button{
+    opacity: 1;
+    transform: translate(0, 0%);
+}
+
+.pw-body{
+    padding: 0 1rem 1rem;
+}
+
+.form-control{
+    color: #eee;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.75rem 0;
+}
+
+.generate{
+    background-color: #ecb602;
+    color: rebeccapurple;
+    display: block;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    width: 100%;
+}
